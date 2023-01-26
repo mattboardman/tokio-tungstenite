@@ -32,8 +32,9 @@ futures-util = { version = "0.3", default-features = false, features = ["sink", 
 tokio = { version = "1.0.0", default-features = false, features = ["io-util"] }
 
 [dependencies.tungstenite]
-version = "0.18.0"
-default-features = false
+git = "https://github.com/kazk/tungstenite-rs.git"
+rev = "1737738461f0a30c7c9f05f9b9678ec39081ba03"
+default-features = ["deflate", "sha1"]
 
 [dependencies.native-tls-crate]
 optional = true
